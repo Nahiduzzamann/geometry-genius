@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Calculations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- header section  -->
+    <header class="container mx-auto">
+        <div class="flex justify-between bg-sky-100 mt-6 rounded p-6 items-center">
+            <div>
+                <h1 class="text-4xl font-bold">Interactive</h1>
+                <h4 class="text-xl font-bold text-slate-500">Geometry Genius</h4>
+            </div>
+            <div>
+                <button class="bg-sky-500 text-white rounded font-bold p-1 pl-6 pr-6" id="blog">Blog</button>
+            </div>
+        </div>
+    </header>
+    <!-- main body  -->
+    <main class="container mx-auto">
+        <div class="flex flex-col sm:flex-row">
+            <!-- calculating section  -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+                <!-- triangle  -->
+                <div class="border-gray-300 border-2 rounded flex flex-col items-center p-8 " id="triangle-C">
+                    <img src="images/triangle.png" alt="">
+                    <h5 class="font-bold mt-4">Triangle</h5>
+                    <small>Area [A] = 0.5*b*h</small><br>
+                    <div><input class="bg-gray-200 w-16 rounded p-1 pl-2" type="text" placeholder="b" id="tbi">
+                        <small>cm</small>
+                        <input class="bg-gray-200 w-16 rounded p-1 pl-2" type="text" placeholder="h" id="thi">
+                        <small>cm</small>
+                    </div><br>
+                    <button class="bg-sky-500 text-white rounded font-bold p-1 pl-10 pr-10"
+                        id="triangle">Calculate</button>
+                </div>
+                <!-- Rectangle -->
+                <div class="border-gray-300 border-2 rounded flex flex-col items-center p-8 " id="Rectangle-C">
+                    <img src="images/rectangle.png" alt="">
+                    <h5 class="font-bold mt-4">Rectangle</h5>
+                    <small>Area [A] = w*l</small><br>
+                    <div><input class="bg-gray-200 w-16 rounded p-1 pl-2" type="text" placeholder="w" id="rwi">
+                        <small>cm</small>
+                        <input id="rli" class="bg-gray-200 w-16 rounded p-1 pl-2" type="text" placeholder="l">
+                        <small>cm</small>
+                    </div><br>
+                    <button class="bg-sky-500 text-white rounded font-bold p-1 pl-10 pr-10"
+                        id="rectangle">Calculate</button>
+                </div>
+                <!-- Parallelogram -->
+                <div class="border-gray-300 border-2 rounded flex flex-col items-center p-8" id="Parallelogram-C">
+                    <img src="images/parallelogram.png" alt="">
+                    <h5 class="font-bold mt-4">Parallelogram</h5>
+                    <small>Area [A] = b*h</small><br>
+                    <div><input class="bg-gray-200 w-16 rounded p-1 pl-2" type="text" placeholder="b" id="pbi">
+                        <small>cm</small>
+                        <input class="bg-gray-200 w-16 rounded p-1 pl-2" type="text" placeholder="h" id="phi">
+                        <small>cm</small>
+                    </div><br>
+                    <button class="bg-sky-500 text-white rounded font-bold p-1 pl-10 pr-10" id="parallelogram">Calculate</button>
+                </div>
+                <!-- Rhombus  -->
+                <div class="border-gray-300 border-2 rounded flex flex-col items-center p-8" id="Rhombus-C">
+                    <img src="images/rhombus.png" alt="">
+                    <h5 class="font-bold mt-4">Rhombus</h5>
+                    <small>Area [A] = 0.5*d1*d2</small><br>
+                    <div><input class="bg-gray-200 w-16 rounded p-1 pl-2" type="text" placeholder="d1" id="rd1">
+                        <small>cm</small>
+                        <input class="bg-gray-200 w-16 rounded p-1 pl-2" type="text" placeholder="d2" id="rd2">
+                        <small>cm</small>
+                    </div><br>
+                    <button class="bg-sky-500 text-white rounded font-bold p-1 pl-10 pr-10"
+                        id="Rhombus">Calculate</button>
+                </div>
+                <!-- Pentagon -->
+                <div class="border-gray-300 border-2 rounded flex flex-col items-center p-8" id="Pentagon-C">
+                    <img src="images/pentagon.png" alt="">
+                    <h5 class="font-bold mt-4">Pentagon</h5>
+                    <small>Area [A] = 0.5*p*b</small><br>
+                    <div><input class="bg-gray-200 w-16 rounded p-1 pl-2" type="text" placeholder="p" id="ppi">
+                        <small>cm</small>
+                        <input class="bg-gray-200 w-16 rounded p-1 pl-2" type="text" placeholder="b" id="pan-bi">
+                        <small>cm</small>
+                    </div><br>
+                    <button class="bg-sky-500 text-white rounded font-bold p-1 pl-10 pr-10"
+                        id="Pentagon">Calculate</button>
+                </div>
+                <!-- Ellipse -->
+                <div class="border-gray-300 border-2 rounded flex flex-col items-center p-8" id="Ellipse-C">
+                    <img src="images/ellipse.png" alt="">
+                    <h5 class="font-bold mt-4">Ellipse</h5>
+                    <small>Area [A] = pi*a*b</small><br>
+                    <div><input class="bg-gray-200 w-16 rounded p-1 pl-2" type="text" placeholder="a" id="eai">
+                        <small>cm</small>
+                        <input class="bg-gray-200 w-16 rounded p-1 pl-2" type="text" placeholder="b" id="ebi">
+                        <small>cm</small>
+                    </div><br>
+                    <button class="bg-sky-500 text-white rounded font-bold p-1 pl-10 pr-10"
+                        id="Ellipse">Calculate</button>
+                </div>
+            </div>
+            <!-- Answer section  -->
+            <div class="w-80 mt-10 ml-4">
+                <h3 class="font-bold text-center mt-8 underline underline-offset-2">Aria Calculation</h3>
+                <div id="result-section" class="">
+                    <!-- <div class="flex p-4 items-center">
+                        <p class="text-xs">
+                            <span>1</span>. Triangle
+                            <span class="ml-6">
+                                12
+                            </span>
+                            cm<sup>2</sup>
+                        </p>
+                        <button class="bg-sky-500 text-white rounded font-bold p-1 ml-6">
+                            <small>
+                                Convert to
+                                m<sup>2</sup>
+                            </small>
+                        </button>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- link js file  -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
